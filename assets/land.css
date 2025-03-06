@@ -99,7 +99,7 @@ body{
         text-align: center;
         padding: 20px;
         background: black;
-        margin-top: 50px;
+        margin-top: 10%;
 }
 /* Responsive Footer */
 @media (max-width: 600px) {
