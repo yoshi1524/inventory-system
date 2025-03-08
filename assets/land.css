@@ -103,18 +103,21 @@ body{
     font-size: 16px;
     font-weight: 500;
 }
-/*.nav-links li a:hover{
-    box-shadow: 0px 4px 10px rgba(0, 255, 55, 0.904);
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8); 
-    transform: scale(1.1);
-    border: 2px solid rgb(0, 190, 0);
-    border-radius: 10px;
-    transition: 0.1s;
-}*/
-
-.nav-links a:hover {
-    color: #29b573;
+.nav-links li a img{
+    height: 40px;
+    align-items: center;
 }
+.nav-links li a img::after{
+    content: '';
+    position: absolute;
+    background: #f1f1f1;
+    transform: scaleX(0);
+    transition: 0.1s;
+}
+.nav-links li a img:hover::after{
+    transform: scaleX(1);
+}
+
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
