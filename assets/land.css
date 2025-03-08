@@ -67,15 +67,34 @@ body{
     max-width: 1000px;
 }
 .new-logo1 img{
-    width: 600px;
+    max-width: 600px;
     padding-left: 150px;
     padding-top: 50px;
     height: auto;
-
+    display: block;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .new-logo1 img{
+        width: 90%;  /* Reduce size for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .quote {
+        width: 100%;
+        padding: 20px;
+    }
 }
 .quote {
     font-size: 60px;
-    max-width: 500%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
     padding-left: 400px;
     color: white;
@@ -88,6 +107,7 @@ body{
     display: block;
     margin: 10px 0;
 }
+
 .login{
     text-align: center;
     color: white;
@@ -158,6 +178,15 @@ body{
         display: block;
         cursor: pointer;
     }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Signup-btnn, .login-btn {
+        position: relative;
+        margin: 5px;
+    }
 }
 .navbar {
     display: flex;
@@ -204,47 +233,6 @@ body{
         transform: scale(1.1);
         box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8); 
 }
-/* Mobile Menu */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: black;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    left: 0;
-    padding: 10px;
-}
-
-.mobile-menu a {
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.mobile-menu button {
-    width: 100%;
-    margin: 10px 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
 /* Modal Styles */
 .modal {
     display: none;
@@ -284,4 +272,5 @@ body{
     width: 90%;
     max-width: 900px;
 }
+
 
