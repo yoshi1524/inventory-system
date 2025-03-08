@@ -45,7 +45,10 @@ body {
 .nav-links a:hover {
     color: #29b573;
 }
-
+.nav-links li a img{
+    height: 40px;
+    align-items: center;
+}
 /* Hero Section */
 .work-hero {
     text-align: center;

@@ -46,6 +46,11 @@ body {
     color: #29b573;
 }
 
+.nav-links li a img{
+    height: 40px;
+    align-items: center;
+}
+
 /* Hero Section */
 .about-hero {
     text-align: center;
