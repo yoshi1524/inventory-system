@@ -1,13 +1,18 @@
-<?php
- $db_server = "Localhost";
-    $db_user = "root";
-    $db_pass = "";
-    $db_name = "tcinv";
-    $conn = "";
 
-    if($conn){
-        echo "Connected";
-    }else{
-        echo "Not Connected";
-    }
-?> 
+<?php
+
+$servername = "localhost";
+$username = "root";        
+$password = "";           
+$dbname = "tcinv";  
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+
+if ($conn->connect_error) {
+
+    die("Connection failed: " . $conn->connect_error);
+
+}
+?>
