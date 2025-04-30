@@ -15,9 +15,11 @@
         <div class= 'wrapper'>
 
             <h2>Login</h2>
+                
                 <center>
                     <span class='warn text-danger'><i><?php echo $notif; ?></i></span>
                 </center>
+
 
                     <div class= 'form-group'>
                         <input type='email' name='user' placeholder='Username'>
@@ -32,7 +34,7 @@
                     </div>
 
                     <center>
-                        <a href="testing1.html">New user? Click here to create an account</a>
+                        <a href="reg.php">New user? Click here to create an account</a>
                     </center>
 
         </div>
